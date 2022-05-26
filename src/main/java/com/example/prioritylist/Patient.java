@@ -5,11 +5,11 @@ public class Patient implements Person {
 
     private String occupation;
 
-    private int age;
+    private String age;
 
     private String problem;
 
-    public Patient(String n, String o, int a, String p){
+    public Patient(String n, String o, String a, String p){
         this.name=n;
         this.occupation=o;
         this.age=a;
@@ -24,7 +24,7 @@ public class Patient implements Person {
         this.occupation=o;
     }
 
-    public void setAge(int a){
+    public void setAge(String a){
         this.age=a;
     }
 
@@ -40,7 +40,7 @@ public class Patient implements Person {
         return occupation;
     }
 
-    public int getAge(){
+    public String getAge(){
         return age;
     }
 

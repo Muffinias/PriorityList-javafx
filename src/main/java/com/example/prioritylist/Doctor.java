@@ -7,22 +7,23 @@ public class Doctor implements Person{
 
     private final String occupation = "Doctor";
 
-    private int age;
+    private String age;
 
     private String field;
 
     public Doctor(){}
 
-    public Doctor(String n, int a){
+    public Doctor(String n, String a, String f){
         this.name=n;
         this.age=a;
+        this.field=f;
     }
 
     public void setName(String n){
         this.name=n;
     }
 
-    public void setAge(int a){
+    public void setAge(String a){
         this.age=a;
     }
 
@@ -38,7 +39,7 @@ public class Doctor implements Person{
         return occupation;
     }
 
-    public int getAge(){
+    public String getAge(){
         return age;
     }
 

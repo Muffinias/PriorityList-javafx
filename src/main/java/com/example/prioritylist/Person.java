@@ -7,5 +7,5 @@ public interface Person {
 
     String occupation = null;
 
-    int age = 0;
+    String age = null;
 }
