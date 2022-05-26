@@ -11,11 +11,9 @@ public class Case {
     private Patient patient;
     private Doctor doctor;
     private int priority;
-    private Group group;
     private ArrayDeque<Case>cases = new ArrayDeque<>();
 
-    public Case(Group g,Patient p, Doctor d, int pr){
-        this.group=g;
+    public Case(Patient p, Doctor d, int pr){
         this.patient=p;
         this.doctor=d;
 
